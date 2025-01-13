@@ -150,12 +150,10 @@ function displayCourses(filter = "All") {
 
   const style = document.createElement("style");
   style.textContent = `
-    /* Hide hamburger by default */
     .hamburger {
       display: none;
     }
 
-    /* Hamburger visible on smaller screens */
     @media (max-width: 768px) {
       .hamburger {
         display: block;

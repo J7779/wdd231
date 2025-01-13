@@ -67,6 +67,17 @@ const courses = [
   },
 ];
 
+const currentYear = new Date().getFullYear();
+
+const lastModified = document.lastModified;
+
+document.querySelector("footer #currentyear").textContent = `© ${currentYear}`;
+
+document.querySelector(
+  "footer #lastModified"
+).textContent = `Last Modified: ${lastModified}`;
+
+
 function displayCourses(filter = "All") {
   const courseContainer = document.querySelector("#course-certificate");
   courseContainer.innerHTML = "";
@@ -78,14 +89,14 @@ function displayCourses(filter = "All") {
   certSection.style.padding = "20px";
   certSection.style.margin = "20px auto";
   certSection.style.boxShadow = "0 4px 8px rgba(0, 0, 0, 0.1)";
-  certSection.style.maxWidth = "800px";
+  certSection.style.maxWidth = "96%";
 
   const buttons = document.querySelectorAll(".filter-button");
   buttons.forEach((button) => {
     button.style.margin = "0.5rem";
     button.style.padding = "0.5rem 1rem";
     button.style.fontSize = "1rem";
-    button.style.backgroundColor = "#007bff";
+    button.style.backgroundColor = "#000000";
     button.style.color = "white";
     button.style.border = "none";
     button.style.borderRadius = "5px";
@@ -107,15 +118,22 @@ function displayCourses(filter = "All") {
     (course) => filter === "All" || course.subject === filter
   );
 
+  courseContainer.style.display = "flex";
+  courseContainer.style.flexWrap = "wrap";
+  courseContainer.style.gap = "1rem";
+  courseContainer.style.justifyContent = "center";
+
   filteredCourses.forEach((course) => {
     const courseDiv = document.createElement("div");
     courseDiv.style.border = "2px solid #ccc";
     courseDiv.style.borderRadius = "10px";
     courseDiv.style.padding = "15px";
-    courseDiv.style.margin = "10px 0";
+    courseDiv.style.margin = "10px";
     courseDiv.style.fontFamily = "Arial, sans-serif";
     courseDiv.style.color = "white";
     courseDiv.style.textAlign = "center";
+    courseDiv.style.flex = "1 1 calc(30% - 1rem)";
+    courseDiv.style.boxSizing = "border-box";
 
     if (course.completed) {
       courseDiv.style.backgroundColor = "green";
@@ -128,6 +146,71 @@ function displayCourses(filter = "All") {
     `;
 
     courseContainer.appendChild(courseDiv);
+  });
+
+  const style = document.createElement("style");
+  style.textContent = `
+    /* Hide hamburger by default */
+    .hamburger {
+      display: none;
+    }
+
+    /* Hamburger visible on smaller screens */
+    @media (max-width: 768px) {
+      .hamburger {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+        font-size: 2rem;
+        background: none;
+        border: none;
+        cursor: pointer;
+        color: white;
+      }
+      nav {
+        display: none;
+      }
+      nav.visible {
+        display: block;
+        background-color: #444656;
+        padding: 1rem;
+        border: 1px solid #ddd;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 1rem;
+        list-style: none;
+        padding: 0;
+      }
+      .card-container {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      .cert-section {
+        width: 90%;
+      }
+      #course-certificate {
+        flex-direction: column;
+        gap: 1rem;
+      }
+      #course-certificate > div {
+        flex: 1 1 100%;
+      }
+    }
+  `;
+  document.head.appendChild(style);
+
+  const hamburgerButton = document.createElement("button");
+  hamburgerButton.className = "hamburger";
+  hamburgerButton.setAttribute("aria-label", "Toggle Navigation");
+  hamburgerButton.innerHTML = "☰";
+
+  const nav = document.querySelector("nav");
+  nav.before(hamburgerButton);
+
+  hamburgerButton.addEventListener("click", () => {
+    nav.classList.toggle("visible");
   });
 }
 

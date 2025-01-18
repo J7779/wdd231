@@ -1,0 +1,90 @@
+[
+    {
+        "Name": "Microsoft Corporation",
+        "Industry": "Informatics, Technology, Communication",
+        "Physical Address": "One Microsoft Way, Redmond, WA 98052",
+        "Website": "https://www.microsoft.com",
+        "Phone": "1-425-882-8080",
+        "Representative": "Satya Nadella / CEO",
+        "MemberSince": "01/01/1975",
+        "Membership": "Platinum",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg"
+    },
+    {
+        "Name": "Amazon.com, Inc.",
+        "Industry": "E-commerce, Technology",
+        "Physical Address": "410 Terry Ave N, Seattle, WA 98109",
+        "Website": "https://www.amazon.com",
+        "Phone": "1-888-280-4331",
+        "Representative": "Andy Jassy / CEO",
+        "MemberSince": "07/05/1994",
+        "Membership": "Platinum",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg"
+    },
+    {
+        "Name": "Tesla, Inc.",
+        "Industry": "Automotive, Energy",
+        "Physical Address": "3500 Deer Creek Road, Palo Alto, CA 94304",
+        "Website": "https://www.tesla.com",
+        "Phone": "1-888-518-3752",
+        "Representative": "Elon Musk / CEO",
+        "MemberSince": "07/01/2003",
+        "Membership": "Gold",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tesla_logo.png"
+    },
+    {
+        "Name": "Walmart Inc.",
+        "Industry": "Retail",
+        "Physical Address": "702 SW 8th Street, Bentonville, AR 72716",
+        "Website": "https://www.walmart.com",
+        "Phone": "1-800-925-6278",
+        "Representative": "Doug McMillon / CEO",
+        "MemberSince": "01/01/1962",
+        "Membership": "Platinum",
+        "logo": "https://banner2.cleanpng.com/20180821/qqz/f7bbdd83e5fa343c24a45ac37934014e.webp"
+    },
+    {
+        "Name": "Apple Inc.",
+        "Industry": "Technology",
+        "Physical Address": "1 Apple Park Way, Cupertino, CA 95014",
+        "Website": "https://www.apple.com",
+        "Phone": "1-408-996-1010",
+        "Representative": "Tim Cook / CEO",
+        "MemberSince": "04/01/1976",
+        "Membership": "Platinum",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fa/Apple_logo_black.svg"
+    },
+    {
+        "Name": "Google LLC",
+        "Industry": "Technology",
+        "Physical Address": "1600 Amphitheatre Parkway, Mountain View, CA 94043",
+        "Website": "https://www.google.com",
+        "Phone": "1-650-253-0000",
+        "Representative": "Sundar Pichai / CEO",
+        "MemberSince": "09/04/1998",
+        "Membership": "Platinum",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg"
+    },
+    {
+        "Name": "The Coca-Cola Company",
+        "Industry": "Food & Beverages",
+        "Physical Address": "One Coca-Cola Plaza, Atlanta, GA 30313",
+        "Website": "https://www.coca-cola.com",
+        "Phone": "1-404-676-2121",
+        "Representative": "James Quincey / CEO",
+        "MemberSince": "01/01/1886",
+        "Membership": "Gold",
+        "logo": "https://banner2.cleanpng.com/20180925/ixi/kisspng-coca-cola-logo-font-fizzy-drinks-1713934750446.webp"
+    },
+    {
+        "Name": "Ford Motor Company",
+        "Industry": "Automotive",
+        "Physical Address": "World Headquarters, 1 American Road, Dearborn, MI 48126",
+        "Website": "https://www.ford.com",
+        "Phone": "1-800-392-3673",
+        "Representative": "Jim Farley / CEO",
+        "MemberSince": "06/16/1903",
+        "Membership": "Gold",
+        "logo": "https://images.seeklogo.com/logo-png/5/2/ford-logo-png_seeklogo-56581.png"
+    }
+]

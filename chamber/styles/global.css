@@ -84,7 +84,7 @@ header {
 .logo-chamber {
     width: 70px;
     padding: 10px 5px;
-    border-radius: 25;
+    border-radius: 25px;
 }
 
 header h1 {
@@ -137,7 +137,7 @@ nav li {
     text-align: center;
     padding: 8px 16px;
     text-decoration: none;
-    border-radius: 25;
+    border-radius: 25px;
 }
 
 .nav-a:hover:not(.active) {
@@ -152,7 +152,7 @@ nav li:last-child {
 .nav-a.active {
     background-color: #0056b3;
     color: var(--text-color);
-    border-radius: 25;
+    border-radius: 25px;
 }
 
 .open li {
@@ -336,7 +336,7 @@ footer p:first-child {
 
     .logo-chamber {
         width: 80px;
-        border-radius: 100;
+        border-radius: 100px;
     }
 
     header h1 {

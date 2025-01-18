@@ -137,6 +137,7 @@ nav li {
     text-align: center;
     padding: 8px 16px;
     text-decoration: none;
+    border-radius: 25;
 }
 
 .nav-a:hover:not(.active) {
@@ -151,6 +152,7 @@ nav li:last-child {
 .nav-a.active {
     background-color: #0056b3;
     color: var(--text-color);
+    border-radius: 25;
 }
 
 .open li {

@@ -1,6 +1,6 @@
 :root {
     --main-color: #333;
-    --text-color: #FFF; 
+    --text-color: #FFFFFF; 
 
     --poppins-heading-font: "Poppins", sans-serif;
     --poppins-regular-font-weight: 400;
@@ -369,14 +369,6 @@ footer p:first-child {
         margin-bottom: 5px;
     }
 
-    .nav-a:hover {
-        color: var(--nav-hover-link-color);
-    }
-    .nav-a:hover::after,
-    .nav-a:hover::before {
-        width: 100%;
-        left: 0;
-    }
 
     .nav-a::after,
     .nav-a::before {

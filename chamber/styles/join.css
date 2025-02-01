@@ -1,0 +1,285 @@
+/* Join Page */
+/* Basic styles for form elements */
+
+main {
+    max-width: 859px;
+    display: grid;
+    grid-template-columns: 1fr; /* Single column layout */
+    gap: 1em;
+    margin: 0 auto;
+}
+
+
+.sub-title-form,
+.sub-title-member {
+    color: white;
+    font-size: var(--font-size-large);
+    text-align: center;
+}
+
+.sub-title-form {
+    margin: 10px;
+}
+
+.sub-title-member {
+    margin-top: 35px;
+}
+
+form {
+    min-width: 300px;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid var(--king-kong);
+
+    background-color: #333;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+}
+
+
+.name-lb input {
+    display: inline-block;
+    width: 45%;
+    margin-right: 5px;
+}
+
+input,
+textarea,
+select {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid var(--king-kong);
+    border-radius: 5px;
+}
+
+.membership-container {
+    display: block;
+}
+
+.membership-container h3 {
+    color: var(--headline-color-on-white);
+    font-size: var(--font-size-large);
+    margin: 10px;
+    text-align: center;
+}
+
+.card {
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 0 3px 5px var(--paragraph-background-color);
+}
+
+.card h3 {
+    color: var(--king-kong);
+}
+
+.card {
+    animation: animate 5s ease infinite;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+@keyframes animate {
+    0% {
+        background-color: burlywood;
+    }
+
+    50% {
+        background-color: #3330;
+    }
+
+    100% {
+        background-color: #14316374;
+    }
+}
+
+
+
+.card button {
+    margin: 0 auto;
+}
+
+.membership-levels {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    gap: 15px;
+}
+
+.membership-level {
+    border: 2px solid rgba(255, 255, 255, 0.2);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    padding: 15px;
+    background: linear-gradient(135deg, #2c3e50, #4b6584);
+    color: #fff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.membership-level:hover {
+    background: linear-gradient(135deg, #34495e, #576574);
+    transform: scale(5);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+
+/* Arrow Button */
+.css-button-arrow--black {
+    min-width: 140px;
+    height: 45px;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    outline: none;
+    border-radius: 100px;
+    border: none;
+    background: linear-gradient(135deg, #23272a, #2c2f33);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+
+/* Message Box */
+.msg-box {
+    margin: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Rotating Text */
+.rotating-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    font-size: 1.2rem;
+    color: var(--king-kong);
+    margin: 0 auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.rotating-text p {
+    display: inline-block;
+    vertical-align: top;
+    width: 80px;
+    height: auto;
+    text-align: center;
+    margin: 0;
+    position: relative;
+}
+
+.rotating-text p .word {
+    position: absolute;
+    display: flex;
+    opacity: 0;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.rotating-text p .word .letter {
+    transform-origin: center center 25px;
+}
+
+.rotating-text p .word .letter.out {
+    transform: rotateX(90deg);
+    transition: 0.3s cubic-bezier(0.6, 0, 0.7, 0.2);
+}
+
+.rotating-text p .word .letter.in {
+    transition: 0.35s ease;
+}
+
+.rotating-text p .word .letter.behind {
+    transform: rotateX(-90deg);
+}
+
+/* Color Themes */
+.alizarin {
+    color: #e74c3c; /* Vibrant red */
+}
+
+.wisteria {
+    color: #8e44ad; /* Deep purple */
+}
+
+.peter-river {
+    color: #2980b9; /* Rich blue */
+}
+
+.emerald {
+    color: #27ae60; /* Fresh green */
+}
+
+.sun-flower {
+    color: #f1c40f; /* Bright gold */
+}
+
+/* Dialog Box */
+dialog {
+    border: 1px solid var(--king-kong);
+    border-radius: 6px;
+    padding: 2.5rem;
+    background: #2d3436;
+    color: #ecf0f1;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    width: 90%;
+    max-width: 600px;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+::backdrop {
+    background: rgba(0, 0, 0, 0.6);
+}
+
+/* Dialog Button */
+dialog button {
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    padding: 10px 15px;
+    border: 2px solid var(--king-kong);
+    background: var(--king-kong);
+    color: var(--white);
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+dialog button:hover {
+    background: var(--white);
+    color: var(--king-kong);
+    transform: scale(1.1);
+}

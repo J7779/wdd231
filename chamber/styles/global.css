@@ -171,6 +171,8 @@ main.discover {
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
+    background-color: #333;
+    border-radius: 25px;
 }
 
 .discover .side-bar {

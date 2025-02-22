@@ -1,0 +1,83 @@
+/*  Additions/Modifications to your existing style.css */
+
+.page-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: var(--main-color); /* Use the main color */
+}
+
+.container-project-box {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive columns */
+    gap: 2rem;
+    justify-items: center; /* Center items horizontally */
+}
+
+.project-card {
+    max-width: 350px; /* Slightly wider */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 100px;
+    box-shadow: var(--box-shadow);
+    overflow: hidden; /*  Clip image corners */
+    transition: transform 0.2s ease-in-out; /* Add a hover effect */
+}
+
+.project-card:hover {
+    transform: translateY(-5px); /* Lift the card slightly */
+}
+
+.project-card img {
+    width: 100%;
+    height: auto;
+    display: block; /* Remove extra space below image */
+}
+
+.project-info {
+    padding: 1rem;
+}
+
+.project-info h2 {
+    font-size: 1.25rem;
+    color: var(--main-color);
+    margin-bottom: 0.5rem;
+}
+
+.project-info p {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.project-info strong {
+    font-weight: 600;
+}
+
+.logos {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    margin-bottom: 1rem; /* Add space below logos */
+}
+
+.logos img {
+    height: 30px;
+    width: auto;
+}
+
+.project-link {
+    display: inline-block; /* Make the link a block-level element */
+    margin-top: 0.5rem;
+    color: var(--accent-color);
+    font-weight: 600;
+    transition: color 0.2s;
+}
+
+.project-link:hover {
+    color: var(--main-color); /* Change color on hover */
+    text-decoration: none;
+}
+.project-link i {
+    margin-left: 0.3rem;
+}

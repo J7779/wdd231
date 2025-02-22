@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="description"
+      content="WDD 231 - Web Frontend Development by Joe McKenzie. This page covers dynamic web development, HTML, CSS, and JavaScript."
+    >
+    <meta name="author" content="Joe McKenzie">
+    <title>WDD 231 - Web Frontend Development - Joe McKenzie</title>
+    <script src="scripts/getdates.js" defer></script>
+    <link rel="stylesheet" href="styles/base.css" >
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <body>
+<header>
+  <h1>WDD 231 - Web Frontend Development - Joe McKenzie</h1>
+
+  <nav class="hidden">
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="https://www.linkedin.com/">LinkedIn</a></li>
+      <li><a href="chamber/directory.html">Chamber</a></li>
+      <li>
+        <a href="https://j7779.github.io">Github Profile</a>
+      </li>
+      <li>
+        <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/omni/1?lang=eng&id=p2#p2">
+          Favorite Scripture (Humility)
+        </a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+    <main>
+      <div class="card-container">
+        <section class="card" id="card1">
+          <h2>Course Work</h2>
+          <img class="moto-image" src="images/moto.webp" alt="Motorcycle" >
+          <ul class="resource-list">
+
+          </ul>
+        </section>
+
+        <section class="card" id="card2">
+          <h2>Web Dev Resources</h2>
+          <img class="moto-image" src="images/coding.webp" alt="Coding" >
+          <ul class="resource-list">
+            <li><a href="https://developer.mozilla.org/">MDN Web Docs</a></li>
+            <li><a href="https://www.w3schools.com/">W3Schools</a></li>
+            <li><a href="https://css-tricks.com/">CSS-Tricks</a></li>
+            <li><a href="https://freecodecamp.org/">freeCodeCamp</a></li>
+            <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+            <li><a href="https://stackoverflow.com/">Stack Overflow</a></li>
+            <li><a href="https://github.com/">GitHub</a></li>
+            <li><a href="https://codepen.io/">CodePen</a></li>
+            <li><a href="https://www.codecademy.com/">Codecademy</a></li>
+            <li><a href="https://learn.shayhowe.com/">Learn Web Design by Shay Howe</a></li>
+          </ul>
+        </section>
+      </div>
+
+      <section class="cert-section">
+        <h2>Course Certificates</h2>
+        <div class="filter-buttons">
+          <button id="filter-all" class="filter-button">Show All</button>
+          <button id="filter-wdd" class="filter-button">WDD Courses</button>
+          <button id="filter-cse" class="filter-button">CSE Courses</button>
+        </div>
+        <div id="course-certificate"></div>
+      </section>
+    </main>
+
+    <footer>
+      <p><span id="currentyear"></span> Joe McKenzie. United States.</p>
+      <p id="lastModified"></p>
+    </footer>
+  </body>
+</html>

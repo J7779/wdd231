@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home - Joe McKenzie</title>
+    <meta name="description" content="Project">
+    <meta name="keywords" content="project">
+    <meta name="author" content="Joe McKenzie">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">  
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://www.afscme57.org/sites/default/files/bio/eap-member-photo-placeholder-jmorgan.png" alt="Logo Joe McKenzie" class="logo">
+            
+            <h1 class="header-title">Joe McKenzie</h1>
+        </div>
+
+        <button id="menu" aria-label="Toggle Navigation">
+            <i class="fas fa-bars"></i>  
+        </button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container">
+        <section class="intro-box">
+            <div class="image-container">
+                <img src="https://media.istockphoto.com/id/865457032/vector/abstract-futuristic-cyberspace-with-binary-code-matrix-background-with-digits-well-organized.jpg?s=612x612&w=0&k=20&c=IQcdedY8fn_DMq6nwc5MaHUBe0H0d5DPyibHR8J2usk="
+                    alt="Background computer image" class="intro-img">
+                <div class="overlay"></div>
+            </div>
+            <div class="intro-msg">
+                <p>Security Researcher</p>
+                <p>Joe McKenzie</p>
+                <p>
+                    I invite you to explore my projects and learn more about my
+                    experience.
+                </p>
+                <div class="intro-social">
+                    
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+                <a href="contact.html" class="button-contact">Contact Us</a>
+            </div>
+        </section>
+
+        <section class="personal-box">
+            <div class="about-myself">
+                <h2>About Me</h2>
+                <p>
+                    
+                    I'm a passionate security researcher with a focus on web application security, particularly in identifying and exploiting vulnerabilities like XSS, SQL injection, and authentication bypasses. My background includes ethical hacking, security auditing, and contributing to open-source security projects
+                </p>
+               
+            </div>
+            
+            <div class="skills">
+                <h1>Tools of the Trade</h1>
+                <div class="tool-box">
+                    <div class="tools">
+                        <img class="tools-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                            alt="HTML5 Logo" />
+                    </div>
+                    <div class="tools">
+                        <img class="tools-icon" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                            alt="CSS Logo" />
+                    </div>
+                    <div class="tools">
+                        <img class="tools-icon"
+                            src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                            alt="JavaScript Logo" />
+                    </div>
+                    
+                </div>
+                <a href="projects.html" class="button-contact">Projects</a>
+            </div>
+        </section>
+
+       
+        <section class="invitation-box">
+            <p>
+                 Contact me today!
+            </p>
+            <a href="contact.html" class="button-contact">Contact Me</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>© <span id="currentyear">2024</span> - Joe McKenzie </p>
+        <p id="lastModified">Last Updated: <span id="last-updated"></span></p>  
+        
+    </footer>
+
+    <script src="scripts/base.js" defer></script>
+</body>
+
+</html>

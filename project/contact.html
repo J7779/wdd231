@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <meta name="description" content="Contact Form">
+    <meta name="keywords" content="Contact, Form, Joe McKenzie">
+    <meta name="author" content="Joe McKenzie">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css"> 
+    <link rel="stylesheet" href="styles/contact.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="https://www.afscme57.org/sites/default/files/bio/eap-member-photo-placeholder-jmorgan.png" alt="Logo Joe McKenzie" class="logo">
+            <h1 class="header-title">Joe McKenzie</h1>
+        </div>
+        <button id="menu" aria-label="Toggle Navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="projects.html">Projects</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main class="container-contact">
+        <section class="contact-box">
+            <div class="image-container">
+                <img src="https://media.istockphoto.com/id/865457032/vector/abstract-futuristic-cyberspace-with-binary-code-matrix-background-with-digits-well-organized.jpg?s=612x612&w=0&k=20&c=IQcdedY8fn_DMq6nwc5MaHUBe0H0d5DPyibHR8J2usk=" alt="Contact Image">
+              <div class="overlay"></div>
+            </div>
+            <div class="form-container">
+                <form action="my-handling-form-page" method="post">
+                    <h1>Contact us</h1>
+                    <ul>
+                        <li>
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="user_name" required />
+                        </li>
+                        <li>
+                            <label for="mail">Email:</label>
+                            <input type="email" id="mail" name="user_email" required />
+                        </li>
+                        <li>
+                            <label for="msg">Message:</label>
+                            <textarea id="msg" name="user_message" required></textarea>
+                        </li>
+                    
+                        <li>
+                            
+                            <button type="submit" class="button-contact">Send your message</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
+             <div class="final-contact">
+                <h3>Web development for the modern world</h3>
+                <p>Ready to bring your project to life? Contact me to discuss your ideas!</p>
+            </div>
+        </section>
+    </main>
+
+     <footer>
+        <p>© <span id="currentyear">2024</span> - Joe McKenzie </p>
+        <p>Last Modified: <span id="last-updated"></span></p>
+        <div class="social">
+            <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+            <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script src="scripts/base.js" defer></script>
+</body>
+
+</html>

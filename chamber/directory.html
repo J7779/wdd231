@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta property="og:title" content="Directory | San Francisco Chamber of Commerce">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="Explore businesses in our San Francisco Chamber of Commerce directory. Find members and connect today.">
+  
+    <title>Directory | San Francisco Chamber of Commerce</title>
+    <meta name="description" content="San Francisco Chamber of Commerce directory of members." >
+    <meta name="author" content="Joe" />
+    <meta property="og:image" content="https://j7779.github.io/wdd231/chamber/images/logo-chamber-modified-small.webp">
+    <meta property="og:url" content="https://j7779.github.io/wdd231">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload"
+        href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap" as="style"
+        onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;700&display=swap">
+    </noscript>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="styles/directory.css">
+    <script type="module" src="scripts/app.js"></script>
+    <script src="scripts/modules/directory.js" defer></script>
+    <link rel="icon" href="images/favicon-main-modified.ico" sizes="48x48" type="image/ico">
+    <script src="https://kit.fontawesome.com/e0a574ddb0.js" crossorigin="anonymous"></script>
+</head>
+
+<body id="directory-page">
+    <header>
+        <nav>
+        
+            <div class="box-logo-header">
+                <img class="logo-chamber" src="images/logo-chamber-modified-small.webp"
+                    alt="San Francisco Chamber of Commerce Logo">
+                <h1 class="nameHeader">San Francisco City<br>Chamber of Commerce</h1>
+                <button name="navigation button" id="menu" aria-label="Toggle menu" aria-expanded="false"></button> <!-- Added aria-expanded for accessibility -->
+            </div>
+            <a href="discover.html" aria-label="Discover more about San Francisco"></a>
+            <a href="discover.html" aria-label="Discover more about San Francisco"></a>
+            <a href="discover.html" aria-label="Discover more about San Francisco"></a>
+            <a href="discover.html" aria-label="Discover more about San Francisco"></a>
+            <ul class="nav-links">
+                <li><a class="nav-a" href="index.html">Home</a></li>
+                <li><a class="nav-a" href="discover.html">Discover</a></li>
+                <li><a class="nav-a active" href="directory.html">Directory</a></li>
+                <li><a class="nav-a" href="join.html">Join</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2 class="Main-title">Directory</h2>
+        <div class="button-box">
+            <button title="List view" class="thebtn activebtn" id="list-view-btn"><i class='fas fa-list'></i></button>
+            <button title="Grid view" class="thebtn" id="grid-view-btn"><i class='fas fa-border-all'></i></button>
+        </div>
+
+        <div id="directory-box"></div>
+    </main>
+    <footer>
+        <p>© <span id="currentyear"></span> Joe</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
